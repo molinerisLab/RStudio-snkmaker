@@ -21,5 +21,3 @@ get_file_path <- function(filename) {
   file.path(get_storage_dir(), filename)
 }
 
-
-
