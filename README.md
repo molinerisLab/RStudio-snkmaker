@@ -9,11 +9,11 @@ devtools::install_github("warrok97ao/Snakemaker/Snakemaker")
 In order to launch the addin: 
 Select the Addin in the RStudio menu, then select "Snakemaker"
 
-![white](https://github.com/user-attachments/assets/f5bbbf92-dc50-4226-9fe9-2b29396dcf32)
+<img width="245" alt="Schermata 2025-02-17 alle 14 19 38" src="https://github.com/user-attachments/assets/5ec21daf-25f3-4c46-9f51-4e72172c0db7" />
 
 The addin will open as a shiny app in the viewer page in the right part of the RStudio interface. 
 
-<img width="588" alt="Schermata 2025-02-17 alle 14 56 35" src="https://github.com/user-attachments/assets/2ba3547d-b5c0-434a-ba73-03392ad6355f" />
+![white](https://github.com/user-attachments/assets/f5bbbf92-dc50-4226-9fe9-2b29396dcf32)
 
 ## First time utilization: 
 When you run the addin for the first time, a default language model is selected, but can be changed in the Configuration button inside the addin.
