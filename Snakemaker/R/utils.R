@@ -9,7 +9,7 @@ get_storage_dir <- function() {
   } else {
     path <- file.path(path.expand("~"), ".config", "Snakemaker")
   }
-  
+
   if (!dir.exists(path)) {
     dir.create(path, recursive = TRUE, showWarnings = FALSE)
   }
@@ -20,3 +20,6 @@ get_storage_dir <- function() {
 get_file_path <- function(filename) {
   file.path(get_storage_dir(), filename)
 }
+
+
+

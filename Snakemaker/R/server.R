@@ -244,11 +244,13 @@ server <- function(input, output, session) {
   })
 
   observeEvent(input$open_settings, {
-    selected_model <- if (file.exists("selected_model.txt")) {
-      readLines("selected_model.txt", warn = FALSE)
+    selected_model <- if (file.exists(get_file_path("selected_model.txt"))) {
+      readLines(get_file_path("selected_model.txt"), warn = FALSE)
     } else {
       "llama3-8b-8192"
     }
+    
+    # Dynamically set the selected value in the modal's selectInput
     showModal(modalDialog(
       title = "Configuration",
       fluidPage(
@@ -256,7 +258,7 @@ server <- function(input, output, session) {
           column(6,
                  selectInput("selected_model_options", "Select Model to Use:",
                              choices = c("llama3-8b-8192", "nvidia/llama-3.1-nemotron-70b-instruct", "gpt-4o-mini"),
-                             selected = selected_model,
+                             selected = selected_model,  # Set the selected value dynamically
                              width = "100%")
           ),
           column(6,
@@ -302,8 +304,16 @@ server <- function(input, output, session) {
   observeEvent(input$save_model_options, {
     selected_model <- isolate(input$selected_model_options)
     selected_model_path <- get_file_path("selected_model.txt")
+    
+    # Write the selected model to the file
     writeLines(selected_model, selected_model_path)
-    showNotification("Model selection saved.", duration = 2)
+    
+    # Notify the user
+    showNotification("Model selection saved and updated.", duration = 2)
+    
+    # Update the UI to reflect the new model
+    updateSelectInput(session, "selected_model_options", selected = selected_model)
+    
     removeModal()
   })
 

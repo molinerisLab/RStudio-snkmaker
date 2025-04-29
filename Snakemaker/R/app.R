@@ -15,8 +15,8 @@ source("R/addin.R")
 selected_model_path <- get_file_path("selected_model.txt")
 shinyApp(
   ui = create_ui(
-    history = if (file.exists("r_history.txt")) readLines("r_history.txt", warn = FALSE) else character(),
-    term_history = if (file.exists("bash_history.txt")) readLines("bash_history.txt", warn = FALSE) else character(),
+    history = if (file.exists(get_file_path("r_history.txt"))) readLines(get_file_path("r_history.txt"), warn = FALSE) else character(),
+    term_history = if (file.exists(get_file_path("bash_history.txt"))) readLines(get_file_path("bash_history.txt"), warn = FALSE) else character(),
     archived_rules = character(),
     selected_model = if (file.exists(selected_model_path)) {
       readLines(selected_model_path, warn = FALSE)
