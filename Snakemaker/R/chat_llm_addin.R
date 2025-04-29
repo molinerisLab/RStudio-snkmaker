@@ -256,7 +256,7 @@ chat_llm_addin <- function() {
           fluidRow(
             column(6,
                    selectInput("selected_model_options", "Select Model to Use:",
-                               choices = c("llama3-8b-8192", "nvidia/llama-3.1-nemotron-70b-instruct"),
+                               choices = c("llama3-8b-8192", "nvidia/llama-3.1-nemotron-70b-instruct", "gpt-4o-mini"),
                                selected = selected_model,
                                width = "100%")
             ),
