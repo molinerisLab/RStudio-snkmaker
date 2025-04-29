@@ -4,7 +4,7 @@ This is an RStudio addin that leverage an LLM to generate snakemake rules using 
 ```
 install.packages("devtools")
 
-devtools::install_github("warrok97ao/Snakemaker")
+devtools::install_github("warrok97ao/Snakemaker/Snakemaker")
 ```
 In order to launch the addin: 
 Select the Addin in the RStudio menu, then select "Snakemaker"
