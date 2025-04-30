@@ -9,7 +9,9 @@ devtools::install_github("warrok97ao/Snakemaker/Snakemaker")
 In order to launch the addin: 
 Select the Addin in the RStudio menu, then select "Snakemaker"
 
-<img width="245" alt="Schermata 2025-02-17 alle 14 19 38" src="https://github.com/user-attachments/assets/5ec21daf-25f3-4c46-9f51-4e72172c0db7" />
+<img width="245" alt="413875964-5ec21daf-25f3-4c46-9f51-4e72172c0db7" src="https://github.com/user-attachments/assets/41c93b2d-2456-466a-87f0-68fa6a1ee09a" />
+
+
 
 The addin will open as a shiny app in the viewer page in the right part of the RStudio interface in a non blocking way, allowing the user to continue using the console and perform operations on it while the addin is running.
 
@@ -35,13 +37,14 @@ This means that in order to make use of a model, it is thus necessary to own a p
 When you generate your first rule, or make a first request to the model, the addin will ask to insert a API key of the corresponding selected model in order to continue. This API key will be stored in a keychain variable in your machine, and will allow the addin to work.
 This API key will not be asked again, but when selecting different models that requires different API key, the prompt will ask for the new key.  
 
-<img width="286" alt="Schermata 2025-02-17 alle 15 00 38" src="https://github.com/user-attachments/assets/b468de74-4dd3-4680-86fd-55185eedde48" />
+<img width="286" alt="413889321-b468de74-4dd3-4680-86fd-55185eedde48" src="https://github.com/user-attachments/assets/ce4d86f3-665e-44ef-a366-3918748f44f3" />
+
 
 If the API key needs to be changed (e.g. expired API token), in the Configuration menu there is a button to delete the current saved one and the user will be asked to insert the new API key the next time a rule is generated. 
 
-<img width="356" alt="Schermata 2025-02-17 alle 15 04 21" src="https://github.com/user-attachments/assets/13b5b99f-5448-415a-a0ac-d792a8f91fcf" />
 
 
+<img width="356" alt="413890835-13b5b99f-5448-415a-a0ac-d792a8f91fcf" src="https://github.com/user-attachments/assets/0c704272-5ddb-44d4-b8f7-9a881ad3f4d1" />
 
 
 
