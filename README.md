@@ -4,7 +4,7 @@ This is an RStudio addin that leverage an LLM to generate snakemake workflow usi
 ```
 install.packages("devtools")
 
-devtools::install_github("warrok97ao/Snakemaker/Snakemaker")
+devtools::install_github("molinerisLab/RStudio-snkmaker/Snakemaker")
 ```
 In order to launch the addin: 
 Select the Addin in the RStudio menu, then select "Snakemaker"
