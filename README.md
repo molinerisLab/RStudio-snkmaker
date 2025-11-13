@@ -59,4 +59,11 @@ By selecting the Chat with LLM a new viewer on the right side of the addin will 
   
 ![Untitled design](https://github.com/user-attachments/assets/3ee39c0f-7532-4b15-beb5-4f6ec0b0adf8)
 
-The chat features  memory of the previous messages sent to the model to improve communication and gives more personalized answers. Every chat has its own history, that is specific to it. It is possible to switch between chat to go back to previous one. The chat is maintened as long as the addin is running but as for now, it deos not allow to keep record of past iterations once the addin is closed. 
+The chat features  memory of the previous messages sent to the model to improve communication and gives more personalized answers. Every chat has its own history, that is specific to it. It is possible to switch between chat to go back to previous one. The chat is maintened as long as the addin is running but as for now, it deos not allow to keep record of past iterations once the addin is closed.
+
+## Examples and Guides
+
+- **[Variant Calling Guide](VARIANT_CALLING_GUIDE.md)** - Learn how to use Snakemaker for variant calling workflows
+- **[Example Workflows](examples/)** - Sample Snakemake workflows including a complete variant calling pipeline
+
+These resources demonstrate how Snakemaker helps you convert bioinformatics commands (like GATK, bcftools, FreeBayes) into reproducible Snakemake workflows.
