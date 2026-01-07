@@ -6,7 +6,7 @@ Authors@R: c(
     person(
       "Alessandro", "Leone",
       email = "alessandro.leone@unito.it",
-      role = c("aut", "cre")
+      role = "author"
     )
   )
 Description: The addin uses LLM to generate snakemake rules using as input line(s) from either R or Bash history.
